@@ -1,0 +1,198 @@
+body{
+
+margin:0;
+background:#0b0b0b;
+color:white;
+font-family:Arial;
+
+}
+
+/* header */
+
+header{
+
+display:flex;
+align-items:center;
+justify-content:space-between;
+background:#111;
+padding:15px;
+
+}
+
+header h1{
+
+margin:0;
+font-size:22px;
+
+}
+
+#search{
+
+padding:8px;
+border-radius:6px;
+border:none;
+width:200px;
+
+}
+
+/* botão carrinho */
+
+#cartBtn{
+
+background:#22c55e;
+border:none;
+padding:10px 15px;
+border-radius:6px;
+cursor:pointer;
+font-weight:bold;
+
+}
+
+/* grid produtos */
+
+#products{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,200px);
+gap:20px;
+padding:20px;
+justify-content:center;
+
+}
+
+/* card produto */
+
+.card{
+
+background:#1a1a1a;
+padding:15px;
+border-radius:10px;
+text-align:center;
+transition:0.2s;
+
+}
+
+.card:hover{
+
+transform:scale(1.05);
+
+}
+
+.card img{
+
+width:120px;
+height:120px;
+object-fit:contain;
+
+}
+
+.card button{
+
+background:#3b82f6;
+border:none;
+padding:8px 12px;
+border-radius:6px;
+cursor:pointer;
+color:white;
+margin-top:5px;
+
+}
+
+/* carrinho lateral */
+
+#cartPanel{
+
+position:fixed;
+right:0;
+top:0;
+width:350px;
+height:100%;
+background:#111;
+padding:20px;
+overflow:auto;
+
+transform:translateX(100%);
+transition:0.3s;
+
+}
+
+#cartPanel.open{
+
+transform:translateX(0);
+
+}
+
+/* header carrinho */
+
+.cartHeader{
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+}
+
+/* botão fechar */
+
+#closeCart{
+
+background:red;
+color:white;
+border:none;
+padding:5px 10px;
+border-radius:6px;
+cursor:pointer;
+
+}
+
+/* item carrinho */
+
+.cartItem{
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+margin-top:10px;
+border-bottom:1px solid #333;
+padding-bottom:5px;
+
+}
+
+.cartItem button{
+
+padding:3px 8px;
+
+}
+
+/* total */
+
+#total{
+
+font-size:18px;
+margin-top:15px;
+
+}
+
+/* botão comprar */
+
+#buyBtn{
+
+width:100%;
+padding:10px;
+background:#22c55e;
+border:none;
+border-radius:6px;
+font-size:16px;
+cursor:pointer;
+margin-top:10px;
+
+}
+
+/* pix */
+
+#pix{
+
+margin-top:20px;
+text-align:center;
+
+}

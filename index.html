@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+<title>Loja Blox Fruits</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>
+
+<h1>🍈 Loja Blox Fruits</h1>
+
+<input
+id="search"
+placeholder="Buscar fruta..."
+oninput="searchProducts()"
+>
+
+<button id="cartBtn" onclick="openCart()">
+🛒 Carrinho (<span id="cartCount">0</span>)
+</button>
+
+</header>
+
+
+<!-- PRODUTOS -->
+
+<div id="products"></div>
+
+
+<!-- CARRINHO -->
+
+<div id="cartPanel">
+
+<div class="cartHeader">
+
+<h2>🛒 Carrinho</h2>
+
+<button id="closeCart" onclick="closeCart()">✖</button>
+
+</div>
+
+
+<input
+id="nick"
+placeholder="Nick no Roblox"
+>
+
+
+<div id="cart"></div>
+
+
+<p id="total">Total: R$ 0</p>
+
+
+<button id="buyBtn" onclick="checkout()">
+Finalizar Compra
+</button>
+
+
+<div id="pix"></div>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
